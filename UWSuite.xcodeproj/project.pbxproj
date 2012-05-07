@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE21F8311544FF6200347E06 /* UWSBuildingsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21F8301544FF6200347E06 /* UWSBuildingsTVC.m */; };
+		EE21F83C15450BFC00347E06 /* CircleArrowDown_sml.png in Resources */ = {isa = PBXBuildFile; fileRef = EE21F83A15450BFC00347E06 /* CircleArrowDown_sml.png */; };
+		EE21F83D15450BFC00347E06 /* CircleArrowRight_sml.png in Resources */ = {isa = PBXBuildFile; fileRef = EE21F83B15450BFC00347E06 /* CircleArrowRight_sml.png */; };
+		EE21F8401546227D00347E06 /* UWSTreeNodeBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21F83F1546227D00347E06 /* UWSTreeNodeBuildings.m */; };
+		EE21F8461546245000347E06 /* UWSTreeViewCellBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21F8451546245000347E06 /* UWSTreeViewCellBuildings.m */; };
+		EE3D3310154DAD9400C138D9 /* UWSBuildingsInfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D330F154DAD9400C138D9 /* UWSBuildingsInfoTVC.m */; };
+		EE3D3313154DAED800C138D9 /* UWSBuildingsInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D3312154DAED800C138D9 /* UWSBuildingsInfoCell.m */; };
 		EE4232B014F008BF00731267 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4232AF14F008BF00731267 /* UIKit.framework */; };
 		EE4232B214F008BF00731267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4232B114F008BF00731267 /* Foundation.framework */; };
 		EE4232B414F008BF00731267 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4232B314F008BF00731267 /* CoreGraphics.framework */; };
@@ -14,12 +21,34 @@
 		EE4232BC14F008BF00731267 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4232BB14F008BF00731267 /* main.m */; };
 		EE4232C014F008BF00731267 /* UWSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4232BF14F008BF00731267 /* UWSAppDelegate.m */; };
 		EE4232C314F008BF00731267 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4232C114F008BF00731267 /* MainStoryboard.storyboard */; };
-		EE4232C614F008BF00731267 /* UWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4232C514F008BF00731267 /* UWSViewController.m */; };
 		EE4232CE14F008BF00731267 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4232CD14F008BF00731267 /* SenTestingKit.framework */; };
 		EE4232CF14F008BF00731267 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4232AF14F008BF00731267 /* UIKit.framework */; };
 		EE4232D014F008BF00731267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4232B114F008BF00731267 /* Foundation.framework */; };
 		EE4232D814F008BF00731267 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE4232D614F008BF00731267 /* InfoPlist.strings */; };
 		EE4232DB14F008BF00731267 /* UWSuiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4232DA14F008BF00731267 /* UWSuiteTests.m */; };
+		EE42335114F036D000731267 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42333F14F036D000731267 /* NSData+Base64.m */; };
+		EE42335214F036D000731267 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42334114F036D000731267 /* NSDate+RFC1123.m */; };
+		EE42335314F036D000731267 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42334314F036D000731267 /* NSDictionary+RequestEncoding.m */; };
+		EE42335414F036D000731267 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42334514F036D000731267 /* NSString+MKNetworkKitAdditions.m */; };
+		EE42335514F036D000731267 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42334714F036D000731267 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		EE42335614F036D000731267 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42334914F036D000731267 /* MKNetworkEngine.m */; };
+		EE42335714F036D000731267 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42334C14F036D000731267 /* MKNetworkOperation.m */; };
+		EE42335814F036D000731267 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42334F14F036D000731267 /* Reachability.m */; };
+		EE42335A14F0375900731267 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE42335914F0375900731267 /* CFNetwork.framework */; };
+		EE42335C14F0376400731267 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE42335B14F0376400731267 /* SystemConfiguration.framework */; };
+		EE42335E14F0377200731267 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE42335D14F0377200731267 /* Security.framework */; };
+		EE42336514F038AC00731267 /* HTTPGet.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42336414F038AC00731267 /* HTTPGet.m */; };
+		EE4FE7C9155206D700B435DC /* UWSParkingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE7C8155206D700B435DC /* UWSParkingTVC.m */; };
+		EE4FE7CC155206F300B435DC /* UWSParkingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE7CB155206F300B435DC /* UWSParkingCell.m */; };
+		EE9A9934155305E4009E6DDD /* UWSFoodInfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A9933155305E4009E6DDD /* UWSFoodInfoTVC.m */; };
+		EE9A993715530636009E6DDD /* UWSTreeNodeFoodInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A993615530636009E6DDD /* UWSTreeNodeFoodInfo.m */; };
+		EE9A993A1553065D009E6DDD /* UWSTreeViewCellFoodInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A99391553065D009E6DDD /* UWSTreeViewCellFoodInfo.m */; };
+		EE9A994A15575094009E6DDD /* UWSOMGUWTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A994915575094009E6DDD /* UWSOMGUWTVC.m */; };
+		EE9A994D155750B9009E6DDD /* UWSOMGUWCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A994C155750B9009E6DDD /* UWSOMGUWCell.m */; };
+		EEF8BEBE154E24000009A3E2 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF8BEBD154E24000009A3E2 /* SpinnerView.m */; };
+		EEF8BEC4154E2BFC0009A3E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF8BEC3154E2BFC0009A3E2 /* QuartzCore.framework */; };
+		EEF8BEC8154F88580009A3E2 /* UWSExamTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF8BEC7154F88580009A3E2 /* UWSExamTVC.m */; };
+		EEF8BECB154F89320009A3E2 /* UWSExamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF8BECA154F89320009A3E2 /* UWSExamCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,25 +62,78 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE21F82F1544FF6200347E06 /* UWSBuildingsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSBuildingsTVC.h; path = Buildings/UWSBuildingsTVC.h; sourceTree = "<group>"; };
+		EE21F8301544FF6200347E06 /* UWSBuildingsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSBuildingsTVC.m; path = Buildings/UWSBuildingsTVC.m; sourceTree = "<group>"; };
+		EE21F83A15450BFC00347E06 /* CircleArrowDown_sml.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleArrowDown_sml.png; sourceTree = "<group>"; };
+		EE21F83B15450BFC00347E06 /* CircleArrowRight_sml.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleArrowRight_sml.png; sourceTree = "<group>"; };
+		EE21F83E1546227D00347E06 /* UWSTreeNodeBuildings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSTreeNodeBuildings.h; path = Buildings/UWSTreeNodeBuildings.h; sourceTree = "<group>"; };
+		EE21F83F1546227D00347E06 /* UWSTreeNodeBuildings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSTreeNodeBuildings.m; path = Buildings/UWSTreeNodeBuildings.m; sourceTree = "<group>"; };
+		EE21F8441546245000347E06 /* UWSTreeViewCellBuildings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSTreeViewCellBuildings.h; path = Buildings/UWSTreeViewCellBuildings.h; sourceTree = "<group>"; };
+		EE21F8451546245000347E06 /* UWSTreeViewCellBuildings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSTreeViewCellBuildings.m; path = Buildings/UWSTreeViewCellBuildings.m; sourceTree = "<group>"; };
+		EE3D330E154DAD9400C138D9 /* UWSBuildingsInfoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSBuildingsInfoTVC.h; path = "Buildings Info/UWSBuildingsInfoTVC.h"; sourceTree = "<group>"; };
+		EE3D330F154DAD9400C138D9 /* UWSBuildingsInfoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSBuildingsInfoTVC.m; path = "Buildings Info/UWSBuildingsInfoTVC.m"; sourceTree = "<group>"; };
+		EE3D3311154DAED800C138D9 /* UWSBuildingsInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSBuildingsInfoCell.h; path = "Buildings Info/UWSBuildingsInfoCell.h"; sourceTree = "<group>"; };
+		EE3D3312154DAED800C138D9 /* UWSBuildingsInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSBuildingsInfoCell.m; path = "Buildings Info/UWSBuildingsInfoCell.m"; sourceTree = "<group>"; };
 		EE4232AB14F008BF00731267 /* UWSuite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWSuite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4232AF14F008BF00731267 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EE4232B114F008BF00731267 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE4232B314F008BF00731267 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EE4232B714F008BF00731267 /* UWSuite-Info.plist */ = {isa = PBXFileReference; path = "UWSuite-Info.plist"; sourceTree = "<group>"; };
+		EE4232B714F008BF00731267 /* UWSuite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWSuite-Info.plist"; sourceTree = "<group>"; };
 		EE4232B914F008BF00731267 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EE4232BB14F008BF00731267 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EE4232BD14F008BF00731267 /* UWSuite-Prefix.pch */ = {isa = PBXFileReference; path = "UWSuite-Prefix.pch"; sourceTree = "<group>"; };
-		EE4232BE14F008BF00731267 /* UWSAppDelegate.h */ = {isa = PBXFileReference; path = UWSAppDelegate.h; sourceTree = "<group>"; };
+		EE4232BD14F008BF00731267 /* UWSuite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UWSuite-Prefix.pch"; sourceTree = "<group>"; };
+		EE4232BE14F008BF00731267 /* UWSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UWSAppDelegate.h; sourceTree = "<group>"; };
 		EE4232BF14F008BF00731267 /* UWSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWSAppDelegate.m; sourceTree = "<group>"; };
 		EE4232C214F008BF00731267 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		EE4232C414F008BF00731267 /* UWSViewController.h */ = {isa = PBXFileReference; path = UWSViewController.h; sourceTree = "<group>"; };
-		EE4232C514F008BF00731267 /* UWSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWSViewController.m; sourceTree = "<group>"; };
 		EE4232CC14F008BF00731267 /* UWSuiteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWSuiteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4232CD14F008BF00731267 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		EE4232D514F008BF00731267 /* UWSuiteTests-Info.plist */ = {isa = PBXFileReference; path = "UWSuiteTests-Info.plist"; sourceTree = "<group>"; };
+		EE4232D514F008BF00731267 /* UWSuiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWSuiteTests-Info.plist"; sourceTree = "<group>"; };
 		EE4232D714F008BF00731267 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EE4232D914F008BF00731267 /* UWSuiteTests.h */ = {isa = PBXFileReference; path = UWSuiteTests.h; sourceTree = "<group>"; };
+		EE4232D914F008BF00731267 /* UWSuiteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UWSuiteTests.h; sourceTree = "<group>"; };
 		EE4232DA14F008BF00731267 /* UWSuiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWSuiteTests.m; sourceTree = "<group>"; };
+		EE42333E14F036D000731267 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		EE42333F14F036D000731267 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		EE42334014F036D000731267 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		EE42334114F036D000731267 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		EE42334214F036D000731267 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		EE42334314F036D000731267 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		EE42334414F036D000731267 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		EE42334514F036D000731267 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		EE42334614F036D000731267 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		EE42334714F036D000731267 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		EE42334814F036D000731267 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		EE42334914F036D000731267 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		EE42334A14F036D000731267 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		EE42334B14F036D000731267 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		EE42334C14F036D000731267 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		EE42334E14F036D000731267 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EE42334F14F036D000731267 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EE42335914F0375900731267 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EE42335B14F0376400731267 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EE42335D14F0377200731267 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EE42336314F038AC00731267 /* HTTPGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPGet.h; path = "External Classes/HTTPGet.h"; sourceTree = "<group>"; };
+		EE42336414F038AC00731267 /* HTTPGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPGet.m; path = "External Classes/HTTPGet.m"; sourceTree = "<group>"; };
+		EE4FE7C7155206D700B435DC /* UWSParkingTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSParkingTVC.h; path = Parking/UWSParkingTVC.h; sourceTree = "<group>"; };
+		EE4FE7C8155206D700B435DC /* UWSParkingTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSParkingTVC.m; path = Parking/UWSParkingTVC.m; sourceTree = "<group>"; };
+		EE4FE7CA155206F300B435DC /* UWSParkingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSParkingCell.h; path = Parking/UWSParkingCell.h; sourceTree = "<group>"; };
+		EE4FE7CB155206F300B435DC /* UWSParkingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSParkingCell.m; path = Parking/UWSParkingCell.m; sourceTree = "<group>"; };
+		EE9A9932155305E4009E6DDD /* UWSFoodInfoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSFoodInfoTVC.h; path = "Food Services/UWSFoodInfoTVC.h"; sourceTree = "<group>"; };
+		EE9A9933155305E4009E6DDD /* UWSFoodInfoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSFoodInfoTVC.m; path = "Food Services/UWSFoodInfoTVC.m"; sourceTree = "<group>"; };
+		EE9A993515530636009E6DDD /* UWSTreeNodeFoodInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSTreeNodeFoodInfo.h; path = "Food Services/UWSTreeNodeFoodInfo.h"; sourceTree = "<group>"; };
+		EE9A993615530636009E6DDD /* UWSTreeNodeFoodInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSTreeNodeFoodInfo.m; path = "Food Services/UWSTreeNodeFoodInfo.m"; sourceTree = "<group>"; };
+		EE9A99381553065D009E6DDD /* UWSTreeViewCellFoodInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSTreeViewCellFoodInfo.h; path = "Food Services/UWSTreeViewCellFoodInfo.h"; sourceTree = "<group>"; };
+		EE9A99391553065D009E6DDD /* UWSTreeViewCellFoodInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSTreeViewCellFoodInfo.m; path = "Food Services/UWSTreeViewCellFoodInfo.m"; sourceTree = "<group>"; };
+		EE9A994815575094009E6DDD /* UWSOMGUWTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSOMGUWTVC.h; path = OMGUW/UWSOMGUWTVC.h; sourceTree = "<group>"; };
+		EE9A994915575094009E6DDD /* UWSOMGUWTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSOMGUWTVC.m; path = OMGUW/UWSOMGUWTVC.m; sourceTree = "<group>"; };
+		EE9A994B155750B9009E6DDD /* UWSOMGUWCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSOMGUWCell.h; path = OMGUW/UWSOMGUWCell.h; sourceTree = "<group>"; };
+		EE9A994C155750B9009E6DDD /* UWSOMGUWCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSOMGUWCell.m; path = OMGUW/UWSOMGUWCell.m; sourceTree = "<group>"; };
+		EEF8BEBC154E24000009A3E2 /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpinnerView.h; path = SpinnerView/SpinnerView.h; sourceTree = "<group>"; };
+		EEF8BEBD154E24000009A3E2 /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpinnerView.m; path = SpinnerView/SpinnerView.m; sourceTree = "<group>"; };
+		EEF8BEC3154E2BFC0009A3E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EEF8BEC6154F88580009A3E2 /* UWSExamTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSExamTVC.h; path = "Exam Schedule/UWSExamTVC.h"; sourceTree = "<group>"; };
+		EEF8BEC7154F88580009A3E2 /* UWSExamTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSExamTVC.m; path = "Exam Schedule/UWSExamTVC.m"; sourceTree = "<group>"; };
+		EEF8BEC9154F89320009A3E2 /* UWSExamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSExamCell.h; path = "Exam Schedule/UWSExamCell.h"; sourceTree = "<group>"; };
+		EEF8BECA154F89320009A3E2 /* UWSExamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSExamCell.m; path = "Exam Schedule/UWSExamCell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +141,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF8BEC4154E2BFC0009A3E2 /* QuartzCore.framework in Frameworks */,
+				EE42335E14F0377200731267 /* Security.framework in Frameworks */,
+				EE42335C14F0376400731267 /* SystemConfiguration.framework in Frameworks */,
+				EE42335A14F0375900731267 /* CFNetwork.framework in Frameworks */,
 				EE4232B014F008BF00731267 /* UIKit.framework in Frameworks */,
 				EE4232B214F008BF00731267 /* Foundation.framework in Frameworks */,
 				EE4232B414F008BF00731267 /* CoreGraphics.framework in Frameworks */,
@@ -78,9 +164,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE21F82D1544FEEF00347E06 /* Tree Example */ = {
+			isa = PBXGroup;
+			children = (
+				EE21F82F1544FF6200347E06 /* UWSBuildingsTVC.h */,
+				EE21F8301544FF6200347E06 /* UWSBuildingsTVC.m */,
+				EE21F83E1546227D00347E06 /* UWSTreeNodeBuildings.h */,
+				EE21F83F1546227D00347E06 /* UWSTreeNodeBuildings.m */,
+				EE21F8441546245000347E06 /* UWSTreeViewCellBuildings.h */,
+				EE21F8451546245000347E06 /* UWSTreeViewCellBuildings.m */,
+			);
+			name = "Tree Example";
+			sourceTree = "<group>";
+		};
+		EE21F83915450BFC00347E06 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE21F83A15450BFC00347E06 /* CircleArrowDown_sml.png */,
+				EE21F83B15450BFC00347E06 /* CircleArrowRight_sml.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EE3D330C154DAD5800C138D9 /* Buildings Info */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D330E154DAD9400C138D9 /* UWSBuildingsInfoTVC.h */,
+				EE3D330F154DAD9400C138D9 /* UWSBuildingsInfoTVC.m */,
+				EE3D3311154DAED800C138D9 /* UWSBuildingsInfoCell.h */,
+				EE3D3312154DAED800C138D9 /* UWSBuildingsInfoCell.m */,
+			);
+			name = "Buildings Info";
+			sourceTree = "<group>";
+		};
 		EE4232A014F008BF00731267 = {
 			isa = PBXGroup;
 			children = (
+				EE42333A14F036D000731267 /* MKNetworkKit */,
 				EE4232B514F008BF00731267 /* UWSuite */,
 				EE4232D314F008BF00731267 /* UWSuiteTests */,
 				EE4232AE14F008BF00731267 /* Frameworks */,
@@ -100,6 +220,10 @@
 		EE4232AE14F008BF00731267 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEF8BEC3154E2BFC0009A3E2 /* QuartzCore.framework */,
+				EE42335D14F0377200731267 /* Security.framework */,
+				EE42335B14F0376400731267 /* SystemConfiguration.framework */,
+				EE42335914F0375900731267 /* CFNetwork.framework */,
 				EE4232AF14F008BF00731267 /* UIKit.framework */,
 				EE4232B114F008BF00731267 /* Foundation.framework */,
 				EE4232B314F008BF00731267 /* CoreGraphics.framework */,
@@ -111,11 +235,17 @@
 		EE4232B514F008BF00731267 /* UWSuite */ = {
 			isa = PBXGroup;
 			children = (
+				EE9A994715574B64009E6DDD /* OMGUW */,
+				EE9A9930155305AB009E6DDD /* Food Services Incomplete */,
+				EE4FE7C5155206AD00B435DC /* Parking */,
+				EEF8BEC5154F88340009A3E2 /* Exam Schedule */,
+				EEF8BEBB154E23900009A3E2 /* SpinnerView */,
+				EE3D330C154DAD5800C138D9 /* Buildings Info */,
+				EE21F82D1544FEEF00347E06 /* Tree Example */,
+				EE42335F14F0380500731267 /* HTTP GET Functions */,
 				EE4232BE14F008BF00731267 /* UWSAppDelegate.h */,
 				EE4232BF14F008BF00731267 /* UWSAppDelegate.m */,
 				EE4232C114F008BF00731267 /* MainStoryboard.storyboard */,
-				EE4232C414F008BF00731267 /* UWSViewController.h */,
-				EE4232C514F008BF00731267 /* UWSViewController.m */,
 				EE4232B614F008BF00731267 /* Supporting Files */,
 			);
 			path = UWSuite;
@@ -124,6 +254,7 @@
 		EE4232B614F008BF00731267 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE21F83915450BFC00347E06 /* Images */,
 				EE4232B714F008BF00731267 /* UWSuite-Info.plist */,
 				EE4232B814F008BF00731267 /* InfoPlist.strings */,
 				EE4232BB14F008BF00731267 /* main.m */,
@@ -149,6 +280,110 @@
 				EE4232D614F008BF00731267 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE42333A14F036D000731267 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				EE42333B14F036D000731267 /* Categories */,
+				EE42334814F036D000731267 /* MKNetworkEngine.h */,
+				EE42334914F036D000731267 /* MKNetworkEngine.m */,
+				EE42334A14F036D000731267 /* MKNetworkKit.h */,
+				EE42334B14F036D000731267 /* MKNetworkOperation.h */,
+				EE42334C14F036D000731267 /* MKNetworkOperation.m */,
+				EE42334D14F036D000731267 /* Reachability */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		EE42333B14F036D000731267 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EE42333E14F036D000731267 /* NSData+Base64.h */,
+				EE42333F14F036D000731267 /* NSData+Base64.m */,
+				EE42334014F036D000731267 /* NSDate+RFC1123.h */,
+				EE42334114F036D000731267 /* NSDate+RFC1123.m */,
+				EE42334214F036D000731267 /* NSDictionary+RequestEncoding.h */,
+				EE42334314F036D000731267 /* NSDictionary+RequestEncoding.m */,
+				EE42334414F036D000731267 /* NSString+MKNetworkKitAdditions.h */,
+				EE42334514F036D000731267 /* NSString+MKNetworkKitAdditions.m */,
+				EE42334614F036D000731267 /* UIAlertView+MKNetworkKitAdditions.h */,
+				EE42334714F036D000731267 /* UIAlertView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EE42334D14F036D000731267 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EE42334E14F036D000731267 /* Reachability.h */,
+				EE42334F14F036D000731267 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		EE42335F14F0380500731267 /* HTTP GET Functions */ = {
+			isa = PBXGroup;
+			children = (
+				EE42336314F038AC00731267 /* HTTPGet.h */,
+				EE42336414F038AC00731267 /* HTTPGet.m */,
+			);
+			name = "HTTP GET Functions";
+			sourceTree = "<group>";
+		};
+		EE4FE7C5155206AD00B435DC /* Parking */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FE7C7155206D700B435DC /* UWSParkingTVC.h */,
+				EE4FE7C8155206D700B435DC /* UWSParkingTVC.m */,
+				EE4FE7CA155206F300B435DC /* UWSParkingCell.h */,
+				EE4FE7CB155206F300B435DC /* UWSParkingCell.m */,
+			);
+			name = Parking;
+			sourceTree = "<group>";
+		};
+		EE9A9930155305AB009E6DDD /* Food Services Incomplete */ = {
+			isa = PBXGroup;
+			children = (
+				EE9A9932155305E4009E6DDD /* UWSFoodInfoTVC.h */,
+				EE9A9933155305E4009E6DDD /* UWSFoodInfoTVC.m */,
+				EE9A993515530636009E6DDD /* UWSTreeNodeFoodInfo.h */,
+				EE9A993615530636009E6DDD /* UWSTreeNodeFoodInfo.m */,
+				EE9A99381553065D009E6DDD /* UWSTreeViewCellFoodInfo.h */,
+				EE9A99391553065D009E6DDD /* UWSTreeViewCellFoodInfo.m */,
+			);
+			name = "Food Services Incomplete";
+			sourceTree = "<group>";
+		};
+		EE9A994715574B64009E6DDD /* OMGUW */ = {
+			isa = PBXGroup;
+			children = (
+				EE9A994815575094009E6DDD /* UWSOMGUWTVC.h */,
+				EE9A994915575094009E6DDD /* UWSOMGUWTVC.m */,
+				EE9A994B155750B9009E6DDD /* UWSOMGUWCell.h */,
+				EE9A994C155750B9009E6DDD /* UWSOMGUWCell.m */,
+			);
+			name = OMGUW;
+			sourceTree = "<group>";
+		};
+		EEF8BEBB154E23900009A3E2 /* SpinnerView */ = {
+			isa = PBXGroup;
+			children = (
+				EEF8BEBC154E24000009A3E2 /* SpinnerView.h */,
+				EEF8BEBD154E24000009A3E2 /* SpinnerView.m */,
+			);
+			name = SpinnerView;
+			sourceTree = "<group>";
+		};
+		EEF8BEC5154F88340009A3E2 /* Exam Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				EEF8BEC6154F88580009A3E2 /* UWSExamTVC.h */,
+				EEF8BEC7154F88580009A3E2 /* UWSExamTVC.m */,
+				EEF8BEC9154F89320009A3E2 /* UWSExamCell.h */,
+				EEF8BECA154F89320009A3E2 /* UWSExamCell.m */,
+			);
+			name = "Exam Schedule";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +458,8 @@
 			files = (
 				EE4232BA14F008BF00731267 /* InfoPlist.strings in Resources */,
 				EE4232C314F008BF00731267 /* MainStoryboard.storyboard in Resources */,
+				EE21F83C15450BFC00347E06 /* CircleArrowDown_sml.png in Resources */,
+				EE21F83D15450BFC00347E06 /* CircleArrowRight_sml.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +496,30 @@
 			files = (
 				EE4232BC14F008BF00731267 /* main.m in Sources */,
 				EE4232C014F008BF00731267 /* UWSAppDelegate.m in Sources */,
-				EE4232C614F008BF00731267 /* UWSViewController.m in Sources */,
+				EE42335114F036D000731267 /* NSData+Base64.m in Sources */,
+				EE42335214F036D000731267 /* NSDate+RFC1123.m in Sources */,
+				EE42335314F036D000731267 /* NSDictionary+RequestEncoding.m in Sources */,
+				EE42335414F036D000731267 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				EE42335514F036D000731267 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				EE42335614F036D000731267 /* MKNetworkEngine.m in Sources */,
+				EE42335714F036D000731267 /* MKNetworkOperation.m in Sources */,
+				EE42335814F036D000731267 /* Reachability.m in Sources */,
+				EE42336514F038AC00731267 /* HTTPGet.m in Sources */,
+				EE21F8311544FF6200347E06 /* UWSBuildingsTVC.m in Sources */,
+				EE21F8401546227D00347E06 /* UWSTreeNodeBuildings.m in Sources */,
+				EE21F8461546245000347E06 /* UWSTreeViewCellBuildings.m in Sources */,
+				EE3D3310154DAD9400C138D9 /* UWSBuildingsInfoTVC.m in Sources */,
+				EE3D3313154DAED800C138D9 /* UWSBuildingsInfoCell.m in Sources */,
+				EEF8BEBE154E24000009A3E2 /* SpinnerView.m in Sources */,
+				EEF8BEC8154F88580009A3E2 /* UWSExamTVC.m in Sources */,
+				EEF8BECB154F89320009A3E2 /* UWSExamCell.m in Sources */,
+				EE4FE7C9155206D700B435DC /* UWSParkingTVC.m in Sources */,
+				EE4FE7CC155206F300B435DC /* UWSParkingCell.m in Sources */,
+				EE9A9934155305E4009E6DDD /* UWSFoodInfoTVC.m in Sources */,
+				EE9A993715530636009E6DDD /* UWSTreeNodeFoodInfo.m in Sources */,
+				EE9A993A1553065D009E6DDD /* UWSTreeViewCellFoodInfo.m in Sources */,
+				EE9A994A15575094009E6DDD /* UWSOMGUWTVC.m in Sources */,
+				EE9A994D155750B9009E6DDD /* UWSOMGUWCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +617,7 @@
 		EE4232DF14F008BF00731267 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UWSuite/UWSuite-Prefix.pch";
 				INFOPLIST_FILE = "UWSuite/UWSuite-Info.plist";
@@ -368,6 +629,7 @@
 		EE4232E014F008BF00731267 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UWSuite/UWSuite-Prefix.pch";
 				INFOPLIST_FILE = "UWSuite/UWSuite-Info.plist";
@@ -429,6 +691,7 @@
 				EE4232E014F008BF00731267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE4232E114F008BF00731267 /* Build configuration list for PBXNativeTarget "UWSuiteTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +700,7 @@
 				EE4232E314F008BF00731267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
