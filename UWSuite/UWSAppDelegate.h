@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTTPGet.h"
+
+#define ApplicationDelegate ((UWSAppDelegate *)[UIApplication sharedApplication].delegate)
 
 @interface UWSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) HTTPGet *mainHTTPGet;
 
 @end
