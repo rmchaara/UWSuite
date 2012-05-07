@@ -66,7 +66,7 @@ SpinnerView *spinner;
     
     // on load we want all information to be pulled
     
-    [ApplicationDelegate.mainHTTPGet getOmgInfo:^(NSArray *omg) {
+    [ApplicationDelegate.mainHTTPGets getOmgInfo:^(NSArray *omg) {
         
         self.omgArray = omg;
         [self.tableView reloadData];

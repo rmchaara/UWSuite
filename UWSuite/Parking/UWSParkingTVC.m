@@ -54,7 +54,7 @@ SpinnerView *spinner;
 -(void) targetMethod: (NSTimer *) theTimer {
     // on load we want all information to be pulled
     spinner = [SpinnerView loadSpinnerIntoView:self.view];
-    [ApplicationDelegate.mainHTTPGet getWatParkInfo:^(NSArray *park) {
+    [ApplicationDelegate.mainHTTPGets getWatParkInfo:^(NSArray *park) {
         
         self.watparkArray = park;
         [self.tableView reloadData];
@@ -87,7 +87,7 @@ SpinnerView *spinner;
     
     // on load we want all information to be pulled
     
-    [ApplicationDelegate.mainHTTPGet getWatParkInfo:^(NSArray *park) {
+    [ApplicationDelegate.mainHTTPGets getWatParkInfo:^(NSArray *park) {
         
         self.watparkArray = park;
         [self.tableView reloadData];

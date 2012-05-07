@@ -38,7 +38,7 @@
  
     
     // on load we want all information to be pulled
-    [ApplicationDelegate.mainHTTPGet getBuildingsInfo:^(NSArray * buildings) {
+    [ApplicationDelegate.mainHTTPGets getBuildingsInfo:^(NSArray * buildings) {
         // get the results of the buildings
         self.buildingsArray = buildings;
         NSArray * blockBuildings ;

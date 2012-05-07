@@ -66,7 +66,7 @@ SpinnerView *spinner;
     
     // on load we want all information to be pulled
     
-    [ApplicationDelegate.mainHTTPGet getExamsInfo:^(NSArray *exams) {
+    [ApplicationDelegate.mainHTTPGets getExamsInfo:^(NSArray *exams) {
         
         self.examsArray = exams;
         [self.tableView reloadData];
