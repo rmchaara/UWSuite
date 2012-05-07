@@ -65,7 +65,7 @@ SpinnerView *spinner;
 
     // on load we want all information to be pulled
    
-    [ApplicationDelegate.mainHTTPGets getBuildingsInfo:^(NSArray *building) {
+    [ApplicationDelegate.mainHTTPGet getBuildingsInfo:^(NSArray *building) {
         
         self.buildingsArray = building;
         [self.tableView reloadData];

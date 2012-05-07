@@ -7,16 +7,16 @@
 //
 
 #import "UWSAppDelegate.h"
-#import "HTTPGets.h"
+#import "HTTPGet.h"
 
 @implementation UWSAppDelegate
 
 @synthesize window = _window;
-@synthesize mainHTTPGets = _mainHTTPGets;//
+@synthesize mainHTTPGet = _mainHTTPGet;//
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.mainHTTPGets = [[HTTPGets alloc] initWithHostName:@"api.uwaterloo.ca" customHeaderFields:nil];
+    self.mainHTTPGet = [[HTTPGet alloc] initWithHostName:@"api.uwaterloo.ca" customHeaderFields:nil];
     // Override point for customization after application launch.
     return YES;
 }

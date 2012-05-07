@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     // on load we want all information to be pulled
-    [ApplicationDelegate.mainHTTPGets getFoodServicesInfo:^(NSArray * food) {
+    [ApplicationDelegate.mainHTTPGet getFoodServicesInfo:^(NSArray * food) {
         // get the results of the buildings
         self.foodInfoArray = food;
       
