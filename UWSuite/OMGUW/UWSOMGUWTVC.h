@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UWSOMGUWTVC : UITableViewController
-// OMG UW Info property
+// OMG UW Info property (aggregate)
 @property (strong, nonatomic) NSArray *omgArray;
 @end
