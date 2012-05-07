@@ -242,7 +242,7 @@
 				EEF8BEBB154E23900009A3E2 /* SpinnerView */,
 				EE3D330C154DAD5800C138D9 /* Buildings Info */,
 				EE21F82D1544FEEF00347E06 /* Tree Example */,
-				EE42335F14F0380500731267 /* HTTP GET Functions */,
+				EE42335F14F0380500731267 /* External Classes */,
 				EE4232BE14F008BF00731267 /* UWSAppDelegate.h */,
 				EE4232BF14F008BF00731267 /* UWSAppDelegate.m */,
 				EE4232C114F008BF00731267 /* MainStoryboard.storyboard */,
@@ -322,13 +322,13 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
-		EE42335F14F0380500731267 /* HTTP GET Functions */ = {
+		EE42335F14F0380500731267 /* External Classes */ = {
 			isa = PBXGroup;
 			children = (
 				EE42336314F038AC00731267 /* HTTPGet.h */,
 				EE42336414F038AC00731267 /* HTTPGet.m */,
 			);
-			name = "HTTP GET Functions";
+			name = "External Classes";
 			sourceTree = "<group>";
 		};
 		EE4FE7C5155206AD00B435DC /* Parking */ = {
