@@ -12,7 +12,7 @@
 @implementation UWSAppDelegate
 
 @synthesize window = _window;
-@synthesize mainHTTPGets = _mainHTTPGets;
+@synthesize mainHTTPGets = _mainHTTPGets;//
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
