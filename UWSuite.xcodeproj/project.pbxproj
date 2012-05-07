@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE012F94155865F800174A5A /* HTTPGet.m in Sources */ = {isa = PBXBuildFile; fileRef = EE012F93155865F800174A5A /* HTTPGet.m */; };
 		EE21F8311544FF6200347E06 /* UWSBuildingsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21F8301544FF6200347E06 /* UWSBuildingsTVC.m */; };
 		EE21F83C15450BFC00347E06 /* CircleArrowDown_sml.png in Resources */ = {isa = PBXBuildFile; fileRef = EE21F83A15450BFC00347E06 /* CircleArrowDown_sml.png */; };
 		EE21F83D15450BFC00347E06 /* CircleArrowRight_sml.png in Resources */ = {isa = PBXBuildFile; fileRef = EE21F83B15450BFC00347E06 /* CircleArrowRight_sml.png */; };
@@ -39,7 +40,6 @@
 		EE42335E14F0377200731267 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE42335D14F0377200731267 /* Security.framework */; };
 		EE4FE7C9155206D700B435DC /* UWSParkingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE7C8155206D700B435DC /* UWSParkingTVC.m */; };
 		EE4FE7CC155206F300B435DC /* UWSParkingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE7CB155206F300B435DC /* UWSParkingCell.m */; };
-		EE8F8C31155862DE00A46BE7 /* HTTPGets.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8C30155862DE00A46BE7 /* HTTPGets.m */; };
 		EE9A9934155305E4009E6DDD /* UWSFoodInfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A9933155305E4009E6DDD /* UWSFoodInfoTVC.m */; };
 		EE9A993715530636009E6DDD /* UWSTreeNodeFoodInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A993615530636009E6DDD /* UWSTreeNodeFoodInfo.m */; };
 		EE9A993A1553065D009E6DDD /* UWSTreeViewCellFoodInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A99391553065D009E6DDD /* UWSTreeViewCellFoodInfo.m */; };
@@ -62,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE012F92155865F800174A5A /* HTTPGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPGet.h; path = HTTPGET/HTTPGet.h; sourceTree = "<group>"; };
+		EE012F93155865F800174A5A /* HTTPGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPGet.m; path = HTTPGET/HTTPGet.m; sourceTree = "<group>"; };
 		EE21F82F1544FF6200347E06 /* UWSBuildingsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSBuildingsTVC.h; path = Buildings/UWSBuildingsTVC.h; sourceTree = "<group>"; };
 		EE21F8301544FF6200347E06 /* UWSBuildingsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSBuildingsTVC.m; path = Buildings/UWSBuildingsTVC.m; sourceTree = "<group>"; };
 		EE21F83A15450BFC00347E06 /* CircleArrowDown_sml.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleArrowDown_sml.png; sourceTree = "<group>"; };
@@ -115,8 +117,6 @@
 		EE4FE7C8155206D700B435DC /* UWSParkingTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSParkingTVC.m; path = Parking/UWSParkingTVC.m; sourceTree = "<group>"; };
 		EE4FE7CA155206F300B435DC /* UWSParkingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSParkingCell.h; path = Parking/UWSParkingCell.h; sourceTree = "<group>"; };
 		EE4FE7CB155206F300B435DC /* UWSParkingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSParkingCell.m; path = Parking/UWSParkingCell.m; sourceTree = "<group>"; };
-		EE8F8C30155862DE00A46BE7 /* HTTPGets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPGets.m; path = HTTPGET/HTTPGets.m; sourceTree = "<group>"; };
-		EE8F8C32155862E300A46BE7 /* HTTPGets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPGets.h; path = HTTPGET/HTTPGets.h; sourceTree = "<group>"; };
 		EE9A9932155305E4009E6DDD /* UWSFoodInfoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSFoodInfoTVC.h; path = "Food Services/UWSFoodInfoTVC.h"; sourceTree = "<group>"; };
 		EE9A9933155305E4009E6DDD /* UWSFoodInfoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSFoodInfoTVC.m; path = "Food Services/UWSFoodInfoTVC.m"; sourceTree = "<group>"; };
 		EE9A993515530636009E6DDD /* UWSTreeNodeFoodInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSTreeNodeFoodInfo.h; path = "Food Services/UWSTreeNodeFoodInfo.h"; sourceTree = "<group>"; };
@@ -336,8 +336,8 @@
 		EE8F8C2B155861A600A46BE7 /* HTTPGET */ = {
 			isa = PBXGroup;
 			children = (
-				EE8F8C32155862E300A46BE7 /* HTTPGets.h */,
-				EE8F8C30155862DE00A46BE7 /* HTTPGets.m */,
+				EE012F92155865F800174A5A /* HTTPGet.h */,
+				EE012F93155865F800174A5A /* HTTPGet.m */,
 			);
 			name = HTTPGET;
 			sourceTree = "<group>";
@@ -519,7 +519,7 @@
 				EE9A993A1553065D009E6DDD /* UWSTreeViewCellFoodInfo.m in Sources */,
 				EE9A994A15575094009E6DDD /* UWSOMGUWTVC.m in Sources */,
 				EE9A994D155750B9009E6DDD /* UWSOMGUWCell.m in Sources */,
-				EE8F8C31155862DE00A46BE7 /* HTTPGets.m in Sources */,
+				EE012F94155865F800174A5A /* HTTPGet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
