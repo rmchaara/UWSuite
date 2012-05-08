@@ -39,6 +39,9 @@ SpinnerView *spinner;
 - (void)viewDidLoad
 {
     
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Banner-02.png"]];
+    
+    
     timer = [NSTimer scheduledTimerWithTimeInterval: 60.0 target:self selector:@selector(targetMethod:) userInfo:nil repeats: YES];
     spinner = [SpinnerView loadSpinnerIntoView:self.view];
     
