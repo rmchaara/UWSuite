@@ -74,7 +74,10 @@ SpinnerView *spinner;
         
         
     }onError:^(NSError *error) {
-        
+        [spinner removeSpinner];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Could not reach a connection" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        [self.navigationController popViewControllerAnimated:YES];
     }];
     
     // super call
