@@ -9,8 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UWSMainViewController : UIViewController
-@property (nonatomic, assign) IBOutlet UIButton *WatPark;
-@property (nonatomic, assign) IBOutlet UIButton *BuildingInfo;
-@property (nonatomic, assign) IBOutlet UIButton *ExamSchedule;
-@property (nonatomic, assign) IBOutlet UIButton *OMGUW;
+
 @end

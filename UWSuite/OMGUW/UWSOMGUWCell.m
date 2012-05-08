@@ -30,11 +30,11 @@
 
 -(void) setOmgData:(NSDictionary*) thisOmgInfo{
    
-    self.content.text = [[[[[thisOmgInfo objectForKey:@"Content"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:
-                          [NSCharacterSet whitespaceAndNewlineCharacterSet]] stringByReplacingOccurrencesOfString:@"&apos;" withString:@"'"];
+    self.content.text = [[[[[[thisOmgInfo objectForKey:@"Content"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:
+                          [NSCharacterSet whitespaceAndNewlineCharacterSet]] stringByReplacingOccurrencesOfString:@"&apos;" withString:@"'"] stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@" "];
     self.date.text = [[[[[thisOmgInfo objectForKey:@"Date"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:
                           [NSCharacterSet whitespaceAndNewlineCharacterSet]] stringByReplacingOccurrencesOfString:@"&apos;" withString:@"'"];
-
+    
 }
 
 @end

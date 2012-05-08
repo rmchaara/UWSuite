@@ -14,10 +14,6 @@
 @end
 
 @implementation UWSMainViewController
-@synthesize WatPark = WatPark_;
-@synthesize BuildingInfo = BuildingInfo_;
-@synthesize ExamSchedule = ExamSchedule_;
-@synthesize OMGUW = OMGUW_;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
