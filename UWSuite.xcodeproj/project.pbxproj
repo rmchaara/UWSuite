@@ -23,6 +23,8 @@
 		EE012FBE155978FE00174A5A /* icon-0i.png in Resources */ = {isa = PBXBuildFile; fileRef = EE012FAF155978FE00174A5A /* icon-0i.png */; };
 		EE012FBF155978FE00174A5A /* MainLogo-01.png in Resources */ = {isa = PBXBuildFile; fileRef = EE012FB0155978FE00174A5A /* MainLogo-01.png */; };
 		EE012FC0155978FE00174A5A /* OriginalIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EE012FB1155978FE00174A5A /* OriginalIcon.png */; };
+		EE012FC715597A9700174A5A /* UWSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE012FC615597A9700174A5A /* UWSMainViewController.m */; };
+		EE012FCA1559815400174A5A /* TFNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EE012FC91559815300174A5A /* TFNavigationBar.m */; };
 		EE21F8311544FF6200347E06 /* UWSBuildingsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21F8301544FF6200347E06 /* UWSBuildingsTVC.m */; };
 		EE21F83C15450BFC00347E06 /* CircleArrowDown_sml.png in Resources */ = {isa = PBXBuildFile; fileRef = EE21F83A15450BFC00347E06 /* CircleArrowDown_sml.png */; };
 		EE21F83D15450BFC00347E06 /* CircleArrowRight_sml.png in Resources */ = {isa = PBXBuildFile; fileRef = EE21F83B15450BFC00347E06 /* CircleArrowRight_sml.png */; };
@@ -94,6 +96,10 @@
 		EE012FAF155978FE00174A5A /* icon-0i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-0i.png"; sourceTree = "<group>"; };
 		EE012FB0155978FE00174A5A /* MainLogo-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainLogo-01.png"; sourceTree = "<group>"; };
 		EE012FB1155978FE00174A5A /* OriginalIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OriginalIcon.png; sourceTree = "<group>"; };
+		EE012FC515597A9700174A5A /* UWSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWSMainViewController.h; sourceTree = "<group>"; };
+		EE012FC615597A9700174A5A /* UWSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWSMainViewController.m; sourceTree = "<group>"; };
+		EE012FC81559815300174A5A /* TFNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFNavigationBar.h; sourceTree = "<group>"; };
+		EE012FC91559815300174A5A /* TFNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFNavigationBar.m; sourceTree = "<group>"; };
 		EE21F82F1544FF6200347E06 /* UWSBuildingsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSBuildingsTVC.h; path = Buildings/UWSBuildingsTVC.h; sourceTree = "<group>"; };
 		EE21F8301544FF6200347E06 /* UWSBuildingsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSBuildingsTVC.m; path = Buildings/UWSBuildingsTVC.m; sourceTree = "<group>"; };
 		EE21F83A15450BFC00347E06 /* CircleArrowDown_sml.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleArrowDown_sml.png; sourceTree = "<group>"; };
@@ -292,6 +298,10 @@
 				EE4232BF14F008BF00731267 /* UWSAppDelegate.m */,
 				EE4232C114F008BF00731267 /* MainStoryboard.storyboard */,
 				EE4232B614F008BF00731267 /* Supporting Files */,
+				EE012FC515597A9700174A5A /* UWSMainViewController.h */,
+				EE012FC615597A9700174A5A /* UWSMainViewController.m */,
+				EE012FC81559815300174A5A /* TFNavigationBar.h */,
+				EE012FC91559815300174A5A /* TFNavigationBar.m */,
 			);
 			path = UWSuite;
 			sourceTree = "<group>";
@@ -580,6 +590,8 @@
 				EE9A994A15575094009E6DDD /* UWSOMGUWTVC.m in Sources */,
 				EE9A994D155750B9009E6DDD /* UWSOMGUWCell.m in Sources */,
 				EE012F94155865F800174A5A /* HTTPGet.m in Sources */,
+				EE012FC715597A9700174A5A /* UWSMainViewController.m in Sources */,
+				EE012FCA1559815400174A5A /* TFNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

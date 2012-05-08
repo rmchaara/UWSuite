@@ -39,9 +39,6 @@ SpinnerView *spinner;
 - (void)viewDidLoad
 {
     
-    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Banner-02.png"]];
-    
-    
     timer = [NSTimer scheduledTimerWithTimeInterval: 60.0 target:self selector:@selector(targetMethod:) userInfo:nil repeats: YES];
     spinner = [SpinnerView loadSpinnerIntoView:self.view];
     
@@ -202,7 +199,8 @@ SpinnerView *spinner;
     label.textColor = [UIColor whiteColor];
     label.font = [UIFont systemFontOfSize:17];
     label.text = @"    Lot         Spaces Available       Locator";
-    label.backgroundColor = [UIColor blueColor];
+    label.backgroundColor = [UIColor colorWithRed:170.0/255.0 green:147.0/255.0 blue:56.0/255.0 alpha:1.0];
+;
     
     [headerView addSubview:label];
     return headerView;

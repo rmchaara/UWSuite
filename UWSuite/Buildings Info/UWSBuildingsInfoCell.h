@@ -12,6 +12,5 @@
 @property (nonatomic, assign) IBOutlet UILabel *acroLabel;
 @property (nonatomic, assign) IBOutlet UILabel *nameLabel;
 
-
 -(void) setBuildingsInfoData:(NSDictionary*) thisBuildingInfo;
 @end

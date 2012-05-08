@@ -178,7 +178,7 @@ SpinnerView *spinner;
     label.font = [UIFont systemFontOfSize:12];
     label.text = @"   Course     Section  Date       Start        End        Location ";
     
-    label.backgroundColor = [UIColor blueColor];
+    label.backgroundColor = [UIColor colorWithRed:103.0/255.0 green:67.0/255.0 blue:41.0/255.0 alpha:1.0];
     
     [headerView addSubview:label];
     return headerView;
