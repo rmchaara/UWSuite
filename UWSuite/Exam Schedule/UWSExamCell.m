@@ -35,7 +35,9 @@
 
 -(void) setExamsData:(NSDictionary*) thisExamInfo {
     
-    
+    // Set UILabels of UWSExamCell
+    // The use of stringByReplacingOccurrences is to deal with HTML text
+    // Eventually replace this with MWFeedParser
 	self.term = [[[[thisExamInfo objectForKey:@"Term"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:
                  [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     self.course.text = [[[[thisExamInfo objectForKey:@"Course"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:

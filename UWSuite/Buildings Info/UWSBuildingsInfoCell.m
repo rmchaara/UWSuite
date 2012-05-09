@@ -31,6 +31,9 @@
 
 -(void) setBuildingsInfoData:(NSDictionary*) thisBuildingInfo {
     
+    // Set UILabels of UWSBuildingsInfoCell
+    // The use of stringByReplacingOccurrences is to deal with HTML text
+    // Eventually replace this with MWFeedParser
     
 	self.nameLabel.text = [[[thisBuildingInfo objectForKey:@"Name"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"];
     self.acroLabel.text = [[[thisBuildingInfo objectForKey:@"Acronym"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"];

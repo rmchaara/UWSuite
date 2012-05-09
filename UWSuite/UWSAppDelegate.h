@@ -14,6 +14,6 @@
 @interface UWSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) HTTPGet *mainHTTPGet;//
+@property (strong, nonatomic) HTTPGet *mainHTTPGet; // Main HTTP Get class instance
 
 @end

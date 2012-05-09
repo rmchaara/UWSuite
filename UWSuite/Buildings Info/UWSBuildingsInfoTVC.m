@@ -104,7 +104,6 @@ SpinnerView *spinner;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
@@ -124,11 +123,7 @@ SpinnerView *spinner;
     
     NSDictionary *thisBuildingInfo = [self.buildingsArray objectAtIndex:indexPath.row];
     
-    // Eliminate the need for double the information (restaurents with the same name in diff locations
-    
-    
-    
-    // code from Stanford Tutorial
+    // Set Cell Building Information
     [cell setBuildingsInfoData:thisBuildingInfo];
 	return cell;
 }

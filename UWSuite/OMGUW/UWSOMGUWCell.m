@@ -29,7 +29,9 @@
 }
 
 -(void) setOmgData:(NSDictionary*) thisOmgInfo{
-   
+    // Set UILabels of UWSOMGUWCell
+    // The use of stringByReplacingOccurrences is to deal with HTML text
+    // Eventually replace this with MWFeedParser
     self.content.text = [[[[[[thisOmgInfo objectForKey:@"Content"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:
                           [NSCharacterSet whitespaceAndNewlineCharacterSet]] stringByReplacingOccurrencesOfString:@"&apos;" withString:@"'"] stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@" "];
     self.date.text = [[[[[thisOmgInfo objectForKey:@"Date"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:

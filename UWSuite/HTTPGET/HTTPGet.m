@@ -8,22 +8,20 @@
 
 #import "HTTPGet.h"
 
-@implementation HTTPGet //
+@implementation HTTPGet 
 
-
+// Retrieve FoodServices Information
 -(MKNetworkOperation*) getFoodServicesInfo:(UWResponseBlock) foodJSONBlock onError:(MKNKErrorBlock) errorBlock {
     
-    // these parameters are what decide what this call does
+    // Initial HTTP GET function
     MKNetworkOperation *op = [self operationWithPath:@"public/v1/?key=8629706fa948dd343dee920cd2a492bf&service=FoodServices&output=json" 
                                               params:nil
                                           httpMethod:@"GET"];    
     
     
-    
+    // Asynchronous HTTP GET functionality
     [op onCompletion:^(MKNetworkOperation *operation) {
         
-        //DLog(@"%@", operation);
-        // NSLog(@"json: %@", [op responseJSON]);
         NSArray * valueDicResponse = [[[[op responseJSON] objectForKey:@"response"] objectForKey:@"data"] objectForKey:@"result"];
         
         foodJSONBlock(valueDicResponse);
@@ -40,15 +38,16 @@
     
 }
 
+// Retrieve Buildings Information
 -(MKNetworkOperation*) getBuildingsInfo:(UWResponseBlock) buildingsJSONBlock onError:(MKNKErrorBlock) errorBlock {
     
-    // these parameters are what decide what this call does
+    // Initial HTTP GET function
     MKNetworkOperation *op = [self operationWithPath:@"public/v1/?key=8629706fa948dd343dee920cd2a492bf&service=Buildings&output=json" 
                                               params:nil
                                           httpMethod:@"GET"];    
     
     
-    
+    // Asynchronous HTTP GET functionality
     [op onCompletion:^(MKNetworkOperation *operation) {
         
         NSArray * valueDicResponse = [[[[op responseJSON] objectForKey:@"response"] objectForKey:@"data"] objectForKey:@"result"];
@@ -66,15 +65,16 @@
     
 }
 
+// Retrieve this term's Exam Information
 -(MKNetworkOperation*) getExamsInfo:(UWResponseBlock) examJSONBlock onError:(MKNKErrorBlock) errorBlock {
     
-    // these parameters are what decide what this call does
+    // Initial HTTP GET function
     MKNetworkOperation *op = [self operationWithPath:@"public/v1/?key=8629706fa948dd343dee920cd2a492bf&service=ExamSchedule&output=json" 
                                               params:nil
                                           httpMethod:@"GET"];    
     
     
-    
+    // Asynchronous HTTP GET functionality
     [op onCompletion:^(MKNetworkOperation *operation) {
         
         NSArray * valueDicResponse = [[[[op responseJSON] objectForKey:@"response"] objectForKey:@"data"] objectForKey:@"result"];
@@ -93,16 +93,16 @@
 }
 
 
-
+// Retrieve live WatPark Information
 -(MKNetworkOperation*) getWatParkInfo:(UWResponseBlock) watparkJSONBlock onError:(MKNKErrorBlock) errorBlock{
     
-    // these parameters are what decide what this call does
+    // Initial HTTP GET function
     MKNetworkOperation *op = [self operationWithPath:@"public/v1/?key=8629706fa948dd343dee920cd2a492bf&service=WatPark&output=json" 
                                               params:nil
                                           httpMethod:@"GET"];    
     
     
-    
+    // Asynchronous HTTP GET functionality
     [op onCompletion:^(MKNetworkOperation *operation) {
         
         NSArray * valueDicResponse = [[[[op responseJSON] objectForKey:@"response"] objectForKey:@"data"] objectForKey:@"result"];
@@ -120,14 +120,16 @@
     
 }
 
+// Retrieve OMGUW Information
 -(MKNetworkOperation*) getOmgInfo:(UWResponseBlock) omgJSONBlock onError:(MKNKErrorBlock) errorBlock{
-    // these parameters are what decide what this call does
+    
+    // Initial HTTP GET function
     MKNetworkOperation *op = [self operationWithPath:@"public/v1/?key=8629706fa948dd343dee920cd2a492bf&service=OMGUW&output=json" 
                                               params:nil
                                           httpMethod:@"GET"];    
     
     
-    
+    // Asynchronous HTTP GET functionality
     [op onCompletion:^(MKNetworkOperation *operation) {
         
         NSArray * valueDicResponse = [[[[[op responseJSON] objectForKey:@"response"] objectForKey:@"data"] objectForKey:@"OMG"] objectForKey:@"result"];

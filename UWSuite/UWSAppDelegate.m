@@ -16,6 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // initialize HTTP GET to api.uwaterloo.ca
     self.mainHTTPGet = [[HTTPGet alloc] initWithHostName:@"api.uwaterloo.ca" customHeaderFields:nil];
     // Override point for customization after application launch.
     return YES;

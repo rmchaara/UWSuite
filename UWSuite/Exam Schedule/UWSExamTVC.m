@@ -36,7 +36,7 @@ SpinnerView *spinner;
 
 - (void)viewDidLoad
 {
-    
+    // used for loading spinner
     spinner = [SpinnerView loadSpinnerIntoView:self.view];
     
     [super viewDidLoad];
@@ -72,8 +72,7 @@ SpinnerView *spinner;
         [self.tableView reloadData];
         [spinner removeSpinner];
         
-        
-    }onError:^(NSError *error) {
+    }onError:^(NSError *error) { // Connection issue error handling
         [spinner removeSpinner];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Could not reach a connection" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
@@ -126,13 +125,7 @@ SpinnerView *spinner;
     
     NSDictionary *thisExamInfo = [self.examsArray objectAtIndex:indexPath.row];
     
-    // Eliminate the need for double the information (restaurents with the same name in diff locations
-    
-    // All term numbers start with 1
-    // next two numbers are the last two numbers of the year
-    // last number : 1 for Winter; 9 for Fall; 5 for Spring
-    
-    // code from Stanford Tutorial
+    // Set cell information
     [cell setExamsData:thisExamInfo];
 	return cell;
 }
@@ -176,6 +169,7 @@ SpinnerView *spinner;
  }
  */
 
+// Set header for column list of Exams
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0, 320, 22)];
     UILabel *label = [[UILabel alloc] initWithFrame:headerView.frame];

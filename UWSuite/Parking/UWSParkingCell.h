@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UWSParkingCell : UITableViewCell
+
+// Labels of the Parking Cell
 @property (nonatomic, assign) IBOutlet UILabel *lot;
 @property (nonatomic, assign) IBOutlet UILabel *count;
 @property (nonatomic, assign) IBOutlet UILabel *cap;

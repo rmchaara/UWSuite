@@ -64,7 +64,7 @@ SpinnerView *spinner;
 - (void)viewDidAppear:(BOOL)animated
 {    
     
-    // on load we want all information to be pulled
+    // on load we want all information to be pulled asynchronously
     
     [ApplicationDelegate.mainHTTPGet getOmgInfo:^(NSArray *omg) {
         
@@ -73,7 +73,7 @@ SpinnerView *spinner;
         [spinner removeSpinner];
         
         
-    }onError:^(NSError *error) {
+    }onError:^(NSError *error) { // onError we want to alert the user of connectivity issues
         [spinner removeSpinner];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Could not reach a connection" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
@@ -126,11 +126,7 @@ SpinnerView *spinner;
     
     NSDictionary *thisOMGInfo = [self.omgArray objectAtIndex:indexPath.row];
     
-    // Eliminate the need for double the information (restaurents with the same name in diff locations
-    
-    
-    
-    // code from Stanford Tutorial
+    // Set Cell data
     [cell setOmgData:thisOMGInfo];
 	return cell;
 }
@@ -189,14 +185,14 @@ SpinnerView *spinner;
      */
 }
 
+// accessoryButtonTappedForRowWithIndexPath is used to redirect users to the original OMGUW link
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
     
     NSDictionary *thisOMGInfo = [self.omgArray objectAtIndex:indexPath.row];
     
-    
-    
     NSString *omgURL = [[[thisOMGInfo objectForKey:@"Link"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"];
     
+    // Open link in iOS browser
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:omgURL]];
     
     

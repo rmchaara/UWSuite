@@ -38,7 +38,7 @@ SpinnerView *spinner;
 
 - (void)viewDidLoad
 {
-    
+    // Set timer to HTTP GET every 60 seconds
     timer = [NSTimer scheduledTimerWithTimeInterval: 60.0 target:self selector:@selector(targetMethod:) userInfo:nil repeats: YES];
     spinner = [SpinnerView loadSpinnerIntoView:self.view];
     
@@ -53,7 +53,6 @@ SpinnerView *spinner;
 
 -(void) targetMethod: (NSTimer *) theTimer {
     // on load we want all information to be pulled
-    spinner = [SpinnerView loadSpinnerIntoView:self.view];
     [ApplicationDelegate.mainHTTPGet getWatParkInfo:^(NSArray *park) {
         
         self.watparkArray = park;
@@ -94,7 +93,7 @@ SpinnerView *spinner;
         [spinner removeSpinner];
         
         
-    }onError:^(NSError *error) {
+    }onError:^(NSError *error) { // onError we want to alert the user of connectivity issues
         [spinner removeSpinner];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Could not reach a connection" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
@@ -142,17 +141,10 @@ SpinnerView *spinner;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {               
     static NSString *CellIdentifier = @"UWSParkingCell";
-    
     UWSParkingCell*cell = (UWSParkingCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    
     NSDictionary *thisWatParkInfo = [self.watparkArray objectAtIndex:indexPath.row];
     
-    // Eliminate the need for double the information (restaurents with the same name in diff locations
-    
-    
-    
-    // code from Stanford Tutorial
+    // set WatPark Cell Information
     [cell setWatParkData:thisWatParkInfo];
 	return cell;
 }
@@ -196,6 +188,7 @@ SpinnerView *spinner;
  }
  */
 
+// Used to create header for this TableView List
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0, 320, 22)];
     UILabel *label = [[UILabel alloc] initWithFrame:headerView.frame];
@@ -222,19 +215,16 @@ SpinnerView *spinner;
      */
 }
 
+// Used to show destination of building in Google maps
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
     
     NSDictionary *thisWatParkInfo = [self.watparkArray objectAtIndex:indexPath.row];
     
-    
-    
+    // stringByReplacingOccurrencesOfString used to replace HTTP string with regular ASCII string
     NSString *latlong = [[[thisWatParkInfo objectForKey:@"LatLong"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"];
-   
     NSString *url = [NSString stringWithFormat: @"http://maps.google.com/maps?q=%@",
                      [latlong stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-    
-    
 }
 
 

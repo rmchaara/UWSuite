@@ -30,6 +30,9 @@
 }
 
 -(void) setWatParkData:(NSDictionary*) thisWatParkInfo {
+    // Set UILabels of UWSParkingCell
+    // The use of stringByReplacingOccurrences is to deal with HTML text
+    // Eventually replace this with MWFeedParser
     NSString * x = [[[[thisWatParkInfo objectForKey:@"Capacity"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:
                     [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     self.lot.text = [[[[thisWatParkInfo objectForKey:@"LotName"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:

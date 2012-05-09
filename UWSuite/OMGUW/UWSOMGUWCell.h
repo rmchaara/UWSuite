@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UWSOMGUWCell : UITableViewCell
-@property (nonatomic, assign) IBOutlet UILabel *content;
-@property (nonatomic, assign) IBOutlet UILabel *date;
+@property (nonatomic, assign) IBOutlet UILabel *content; // OMGUW post
+@property (nonatomic, assign) IBOutlet UILabel *date; // Date/Time post
 
-
--(void) setOmgData:(NSDictionary*) thisOmgInfo;
+// Function to pass NSDictionary of OMGUW information to set to cell
+-(void) setOmgData:(NSDictionary*) thisOmgInfo; 
 
 @end
