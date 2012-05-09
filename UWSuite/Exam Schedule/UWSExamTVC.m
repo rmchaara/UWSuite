@@ -128,7 +128,9 @@ SpinnerView *spinner;
     
     // Eliminate the need for double the information (restaurents with the same name in diff locations
     
-    
+    // All term numbers start with 1
+    // next two numbers are the last two numbers of the year
+    // last number : 1 for Winter; 9 for Fall; 5 for Spring
     
     // code from Stanford Tutorial
     [cell setExamsData:thisExamInfo];
@@ -185,6 +187,7 @@ SpinnerView *spinner;
     
     [headerView addSubview:label];
     return headerView;
+    
 }
 
 #pragma mark - Table view delegate

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uhV-Vb-azp">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
@@ -103,13 +102,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kBf-Cd-HuI">
+                                <rect key="frame" x="124" y="354" width="72" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="cred.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tZ1-gC-Hx9" kind="push" id="ih8-bq-Ylc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="UW Suite" id="7ST-hy-kf4"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="85" y="636"/>
+            <point key="canvasLocation" x="75" y="636"/>
         </scene>
         <!--UWSOMGUWTVC - OMG UW-->
         <scene sceneID="bs0-Hz-j7E">
@@ -257,6 +271,44 @@
             </objects>
             <point key="canvasLocation" x="1034" y="104"/>
         </scene>
+        <!--View Controller - Credits-->
+        <scene sceneID="zRT-ph-4iu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsE-tV-ksG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="tZ1-gC-Hx9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FAE-21-tEl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lead Programmer - Ramie Chaarani" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xX6-nN-byd">
+                                <rect key="frame" x="5" y="29" width="281" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lead Artist - Jim Luong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gth-2n-JBV">
+                                <rect key="frame" x="5" y="56" width="281" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Contributers: Coming soon (hopefully)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ZIj-M1-T6u">
+                                <rect key="frame" x="5" y="85" width="313" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Credits" id="lgI-ID-i8F"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-339" y="17"/>
+        </scene>
         <!--ParkingTVC - WatPark Info-->
         <scene sceneID="AXO-ib-bQy">
             <objects>
@@ -331,16 +383,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hhh-al-LWc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="54" sectionHeaderHeight="22" sectionFooterHeight="22" id="hhh-al-LWc">
                                 <rect key="frame" x="0.0" y="20" width="320" height="396"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.16862745098039217" green="0.086274509803921567" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UWSExamCell" rowHeight="47" id="CzN-rb-Ef6" customClass="UWSExamCell">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="47"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UWSExamCell" rowHeight="54" id="CzN-rb-Ef6" customClass="UWSExamCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Course" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UFI-Fz-AOg">
@@ -488,6 +540,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cred.png" width="64" height="64"/>
         <image name="icon-0a.png" width="64" height="64"/>
         <image name="icon-0b.png" width="64" height="64"/>
         <image name="icon-0e.png" width="64" height="64"/>
@@ -526,12 +579,6 @@
         </class>
         <class className="UWSMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSMainViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BuildingInfo" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="ExamSchedule" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="OMGUW" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="WatPark" candidateClass="UIButton"/>
-            </relationships>
         </class>
         <class className="UWSOMGUWCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSOMGUWCell.h"/>
