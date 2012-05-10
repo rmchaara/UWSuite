@@ -57,7 +57,6 @@
 		EE4FE7C9155206D700B435DC /* UWSParkingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE7C8155206D700B435DC /* UWSParkingTVC.m */; };
 		EE4FE7CC155206F300B435DC /* UWSParkingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE7CB155206F300B435DC /* UWSParkingCell.m */; };
 		EE6775A51559C0B600F043EF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6775A41559C0B600F043EF /* Default.png */; };
-		EE6775A7155B5A9B00F043EF /* README in Resources */ = {isa = PBXBuildFile; fileRef = EE6775A6155B5A9B00F043EF /* README */; };
 		EE9A9934155305E4009E6DDD /* UWSFoodInfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A9933155305E4009E6DDD /* UWSFoodInfoTVC.m */; };
 		EE9A993715530636009E6DDD /* UWSTreeNodeFoodInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A993615530636009E6DDD /* UWSTreeNodeFoodInfo.m */; };
 		EE9A993A1553065D009E6DDD /* UWSTreeViewCellFoodInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9A99391553065D009E6DDD /* UWSTreeViewCellFoodInfo.m */; };
@@ -153,7 +152,6 @@
 		EE4FE7CA155206F300B435DC /* UWSParkingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSParkingCell.h; path = Parking/UWSParkingCell.h; sourceTree = "<group>"; };
 		EE4FE7CB155206F300B435DC /* UWSParkingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSParkingCell.m; path = Parking/UWSParkingCell.m; sourceTree = "<group>"; };
 		EE6775A41559C0B600F043EF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		EE6775A6155B5A9B00F043EF /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		EE9A9932155305E4009E6DDD /* UWSFoodInfoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSFoodInfoTVC.h; path = "Food Services/UWSFoodInfoTVC.h"; sourceTree = "<group>"; };
 		EE9A9933155305E4009E6DDD /* UWSFoodInfoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UWSFoodInfoTVC.m; path = "Food Services/UWSFoodInfoTVC.m"; sourceTree = "<group>"; };
 		EE9A993515530636009E6DDD /* UWSTreeNodeFoodInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UWSTreeNodeFoodInfo.h; path = "Food Services/UWSTreeNodeFoodInfo.h"; sourceTree = "<group>"; };
@@ -252,7 +250,6 @@
 		EE4232A014F008BF00731267 = {
 			isa = PBXGroup;
 			children = (
-				EE6775A6155B5A9B00F043EF /* README */,
 				EE42333A14F036D000731267 /* MKNetworkKit */,
 				EE4232B514F008BF00731267 /* UWSuite */,
 				EE4232D314F008BF00731267 /* UWSuiteTests */,
@@ -532,7 +529,6 @@
 				EE012FBF155978FE00174A5A /* MainLogo-01.png in Resources */,
 				EE012FC0155978FE00174A5A /* OriginalIcon.png in Resources */,
 				EE6775A51559C0B600F043EF /* Default.png in Resources */,
-				EE6775A7155B5A9B00F043EF /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
