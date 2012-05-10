@@ -1,13 +1,7 @@
-Download
---------
-
-[Markdown 1.0.1][dl] (18 KB) -- 17 Dec 2004
-
-[dl]: http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip
-
-
 Introduction
 ------------
+
+UW Suite is the beginning of an iOS application that takes advantage of the open data available on api.uwaterloo.ca and presents it to University of Waterloo students who wish to access this data in a more presentable manner.
 
 Markdown is a text-to-HTML conversion tool for web writers. Markdown
 allows you to write using an easy-to-read, easy-to-write plain text
