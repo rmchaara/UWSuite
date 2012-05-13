@@ -10,26 +10,26 @@ If any of you would like to contribute to this project, just submit a pull and I
 
 Current State
 ------------
-[![](http://i.imgur.com/1ljuW.png)](http://i.imgur.com/1ljuW.png)
+[![](http://i.imgur.com/o5FH2.jpg)](http://i.imgur.com/6hKDL.jpg)
 As of right now, the application created has 4 main views that are available to the user including a main screen. There are several improvements to this application that I would like to make. Some of the changes come from the categories I am about to list, but there are also other functionalities and views that I plan on adding later on as well. If you would like the full list of todo's check out my ToDo document.
 
 ### Main Screen ###
-[![](http://i.imgur.com/2fBYI.png)](http://i.imgur.com/7p0qj.png)
+[![](http://i.imgur.com/xL6zc.jpg)](http://i.imgur.com/F0bWo.jpg)
 
 This screen is pretty self explanatory and will link directly to the features of the application upon clicking the icons.
 
 ### Buildings Locator ###
-[![](http://i.imgur.com/CA2s0.png)](http://i.imgur.com/50MTO.png)
+[![](http://i.imgur.com/VKu7l.jpg)](http://i.imgur.com/rgwCZ.jpg)
 The current state of the buildings locator is to give a list of all of the buildings on campus and allow users to choose which building they would like to locate on their built in google maps application.
 
 ### Exam Schedule ###
-[![](http://i.imgur.com/xXQkO.png)](http://i.imgur.com/JQ1mO.png)
+[![](http://i.imgur.com/ja2km.jpg)](http://i.imgur.com/VtqfM.jpg)
 The current state of the exam schedule portion of the UW Suite is that it will display the most recently available Exam schedule. 
 
 ### OMGUW ###
-[![](http://i.imgur.com/Abvjq.png)](http://i.imgur.com/Iax3c.png)
+[![](http://i.imgur.com/uiXRl.jpg)](http://i.imgur.com/E9ZoC.jpg)
 OMGUW simply displays the latest posts from OMGUW including the date of the post.
 
 ### WatPark ###
-[![](http://i.imgur.com/83Umf.png)](http://i.imgur.com/xVX7P.png)
+[![](http://i.imgur.com/qyJrq.jpg)](http://i.imgur.com/UTPT2.jpg)
 WatPark gives a real time view of how many parking spots are still available and this view refreshes every minute.
