@@ -12,7 +12,7 @@ Current State
 ------------
 [![](http://i.imgur.com/o5FH2.jpg)](http://i.imgur.com/6hKDL.jpg)
 As of right now, the application created has 4 main views that are available to the user including a main screen. There are several improvements to this application that I would like to make. Some of the changes come from the categories I am about to list, but there are also other functionalities and views that I plan on adding later on as well. If you would like the full list of todo's check out my ToDo document.
-<div style="float: right"><img src="http://i.imgur.com/F0bWo.jpg"></div>
+[![](http://dl.dropbox.com/u/378729/MBProgressHUD/1-thumb.png)](http://dl.dropbox.com/u/378729/MBProgressHUD/1.png)
 ### Main Screen ###
 [![](http://i.imgur.com/xL6zc)]()
 
