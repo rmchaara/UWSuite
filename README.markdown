@@ -6,7 +6,7 @@ I would like to point out that this is the first project that I have gone full o
 
 Initially I wanted to just release something to the Appstore with the current state that it is in now, however I have decided to hold off from that until this application has a presentable user experience.
 
-If any of you would like to contribute to this project, first look at the [Future Plans](#future-plans) submit a pull and I will be more than happy to look over it as soon as possible. I would also like to open the invite to people who would like to use my code and shape it towards creating their own project however I ask that you please reference my work. I realize that this is the internet so I'm taking a gamble here but be nice :)
+If any of you would like to contribute to this project, first look at the [Future Plans](#future-plans) section and submit a pull and I will be more than happy to look over it as soon as possible. I would also like to open the invite to people who would like to use my code and shape it towards creating their own project however I ask that you please reference my work. I realize that this is the internet so I'm taking a gamble here but be nice :)
 
 Current State
 ------------
