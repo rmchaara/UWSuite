@@ -185,6 +185,14 @@ SpinnerView *spinner;
      */
 }
 
+//Is called to set the background colours (can customize the cell here)
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UWSOMGUWCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    double colours[6] = {134.0,47.0,92.0,237.0,85.0,158.0};
+    [cell setCellColours:colours atRowNumber:indexPath.row];
+    
+}
+
 // accessoryButtonTappedForRowWithIndexPath is used to redirect users to the original OMGUW link
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
     

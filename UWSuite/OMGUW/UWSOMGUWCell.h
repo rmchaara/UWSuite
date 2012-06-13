@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonCell.h"
 
-@interface UWSOMGUWCell : UITableViewCell
+@interface UWSOMGUWCell : CommonCell
 @property (nonatomic, assign) IBOutlet UILabel *content; // OMGUW post
 @property (nonatomic, assign) IBOutlet UILabel *date; // Date/Time post
 

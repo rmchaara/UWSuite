@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonCell.h"
 
-@interface UWSBuildingsInfoCell : UITableViewCell
+@interface UWSBuildingsInfoCell : CommonCell
+
 @property (nonatomic, assign) IBOutlet UILabel *acroLabel;
 @property (nonatomic, assign) IBOutlet UILabel *nameLabel;
 

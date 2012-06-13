@@ -114,6 +114,14 @@ SpinnerView *spinner;
     return [self.buildingsArray count];
 }
 
+//Is called to set the background colours (can customize the cell here)
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UWSBuildingsInfoCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    double colours[6] = {22.0, 101.0, 110.0, 35.0, 169.0, 175.0};
+    [cell setCellColours:colours atRowNumber:indexPath.row];
+    
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {               
     static NSString *CellIdentifier = @"UWSBuildingsInfoCell";

@@ -7,15 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonCell.h"
 
-@interface UWSParkingCell : UITableViewCell
+@interface UWSParkingCell : CommonCell
 
 // Labels of the Parking Cell
 @property (nonatomic, assign) IBOutlet UILabel *lot;
 @property (nonatomic, assign) IBOutlet UILabel *count;
 @property (nonatomic, assign) IBOutlet UILabel *cap;
 
-
+-(void)setCellColour:(int)rowNumber;
+-(void)setAccessoryImage;
 -(void) setWatParkData:(NSDictionary*) thisWatParkInfo;
 
 @end

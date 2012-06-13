@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonCell.h"
 
-@interface UWSExamCell : UITableViewCell 
+@interface UWSExamCell : CommonCell
+
 @property (strong, atomic) NSString *term;
 @property (nonatomic, assign) IBOutlet UILabel *course;
 @property (nonatomic, assign) IBOutlet UILabel *section;
@@ -19,4 +21,5 @@
 
 
 -(void) setExamsData:(NSDictionary*) thisExamInfo;
+-(void) setCellColour:(int)rowNumber;
 @end

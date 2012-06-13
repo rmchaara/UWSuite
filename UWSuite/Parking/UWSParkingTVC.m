@@ -138,12 +138,20 @@ SpinnerView *spinner;
     return [self.watparkArray count];
 }
 
+//Is called to set the background colours (can customize the cell here)
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UWSParkingCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    double colours[6] = {56.0,51.0,32.0,170.0,147.0,56.0};
+    [cell setCellColours:colours atRowNumber:indexPath.row];
+    
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {               
     static NSString *CellIdentifier = @"UWSParkingCell";
     UWSParkingCell*cell = (UWSParkingCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     NSDictionary *thisWatParkInfo = [self.watparkArray objectAtIndex:indexPath.row];
-    
+       
     // set WatPark Cell Information
     [cell setWatParkData:thisWatParkInfo];
 	return cell;

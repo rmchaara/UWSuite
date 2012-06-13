@@ -116,6 +116,14 @@ SpinnerView *spinner;
     return [self.examsArray count];
 }
 
+//Is called to set the background colours (can customize the cell here)
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UWSExamCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    double colours[6] = {65.0, 41.0, 21.0, 103.0, 67.0, 40.0};
+    [cell setCellColours:colours atRowNumber:indexPath.row];
+    
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {               
     static NSString *CellIdentifier = @"UWSExamCell";
@@ -125,8 +133,12 @@ SpinnerView *spinner;
     
     NSDictionary *thisExamInfo = [self.examsArray objectAtIndex:indexPath.row];
     
+    //Set cell background colour
+    //[cell setCellColour:indexPath.row];
+    
     // Set cell information
     [cell setExamsData:thisExamInfo];
+    
 	return cell;
 }
 
@@ -183,6 +195,8 @@ SpinnerView *spinner;
     return headerView;
     
 }
+
+
 
 #pragma mark - Table view delegate
 

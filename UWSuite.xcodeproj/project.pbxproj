@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		716031E9158946E40078C03E /* CommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 716031E8158946E40078C03E /* CommonCell.m */; };
 		EE012F94155865F800174A5A /* HTTPGet.m in Sources */ = {isa = PBXBuildFile; fileRef = EE012F93155865F800174A5A /* HTTPGet.m */; };
 		EE012FB2155978FE00174A5A /* Banner-01.png in Resources */ = {isa = PBXBuildFile; fileRef = EE012FA3155978FE00174A5A /* Banner-01.png */; };
 		EE012FB3155978FE00174A5A /* Banner-02.png in Resources */ = {isa = PBXBuildFile; fileRef = EE012FA4155978FE00174A5A /* Banner-02.png */; };
@@ -80,6 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		716031E7158946E40078C03E /* CommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonCell.h; path = Common/CommonCell.h; sourceTree = "<group>"; };
+		716031E8158946E40078C03E /* CommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonCell.m; path = Common/CommonCell.m; sourceTree = "<group>"; };
 		EE012F92155865F800174A5A /* HTTPGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPGet.h; path = HTTPGET/HTTPGet.h; sourceTree = "<group>"; };
 		EE012F93155865F800174A5A /* HTTPGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPGet.m; path = HTTPGET/HTTPGet.m; sourceTree = "<group>"; };
 		EE012FA3155978FE00174A5A /* Banner-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Banner-01.png"; sourceTree = "<group>"; };
@@ -201,6 +204,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		716031EA158946EC0078C03E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				716031E7158946E40078C03E /* CommonCell.h */,
+				716031E8158946E40078C03E /* CommonCell.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		EE21F82D1544FEEF00347E06 /* Tree Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +315,7 @@
 				EE4232B614F008BF00731267 /* Supporting Files */,
 				EE012FC81559815300174A5A /* TFNavigationBar.h */,
 				EE012FC91559815300174A5A /* TFNavigationBar.m */,
+				716031EA158946EC0078C03E /* Common */,
 			);
 			path = UWSuite;
 			sourceTree = "<group>";
@@ -594,6 +607,7 @@
 				EE9A994D155750B9009E6DDD /* UWSOMGUWCell.m in Sources */,
 				EE012F94155865F800174A5A /* HTTPGet.m in Sources */,
 				EE012FCA1559815400174A5A /* TFNavigationBar.m in Sources */,
+				716031E9158946E40078C03E /* CommonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
