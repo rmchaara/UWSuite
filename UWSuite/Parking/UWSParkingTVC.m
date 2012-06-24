@@ -15,6 +15,7 @@
 @implementation UWSParkingTVC
 @synthesize watparkArray = watparkArray_;
 @synthesize timer = timer_;
+@synthesize watparkDetailsArray = watparkDetailsArray_;
 
 SpinnerView *spinner;
 - (id)initWithStyle:(UITableViewStyle)style
@@ -57,14 +58,11 @@ SpinnerView *spinner;
         
         self.watparkArray = park;
         [self.tableView reloadData];
-        [spinner removeSpinner];
-        
+        [spinner removeSpinner];        
         
     }onError:^(NSError *error) {
         
     }];
-    // super call
-    [super viewDidLoad];
    
 }
 
@@ -93,6 +91,17 @@ SpinnerView *spinner;
         [spinner removeSpinner];
         
         
+    }onError:^(NSError *error) { // onError we want to alert the user of connectivity issues
+        [spinner removeSpinner];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Could not reach a connection" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    
+    [ApplicationDelegate.mainHTTPGet getWatParkDetails:^(NSArray *park) {
+        
+        self.watparkDetailsArray = park;
+        [self.tableView reloadData];            
     }onError:^(NSError *error) { // onError we want to alert the user of connectivity issues
         [spinner removeSpinner];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Could not reach a connection" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -223,16 +232,36 @@ SpinnerView *spinner;
      */
 }
 
-// Used to show destination of building in Google maps
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+//Prepares for the segue for parking details by finding the correct row in the details
+// and setting it in ParkingDetails
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     
-    NSDictionary *thisWatParkInfo = [self.watparkArray objectAtIndex:indexPath.row];
+    NSIndexPath *index = [self.tableView indexPathForSelectedRow];
+    NSDictionary *lotMain = [self.watparkArray objectAtIndex:index.row];
+    NSUInteger detailsIndex = 0;
+        
+    //The name in the row of watparkArray
+    NSString *name = [[[[lotMain objectForKey:@"LotName"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:
+                                         [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    // stringByReplacingOccurrencesOfString used to replace HTTP string with regular ASCII string
-    NSString *latlong = [[[thisWatParkInfo objectForKey:@"LatLong"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"];
-    NSString *url = [NSString stringWithFormat: @"http://maps.google.com/maps?q=%@",
-                     [latlong stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    //Itterate through the details array and if there is a name match, break
+    for (id object in self.watparkDetailsArray) 
+    {
+        //The name in the current row of watparkDetails
+        NSString *detailsName = [[[[object objectForKey:@"Name"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"] stringByReplacingOccurrencesOfString:@"&#8217;" withString:@"'"]stringByTrimmingCharactersInSet:
+                                 [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        
+        if([name isEqualToString:detailsName]){
+            break;
+        }
+        
+        //If not found, increment
+        detailsIndex +=1;
+    }
+    
+    [segue.destinationViewController setLot:[self.watparkDetailsArray objectAtIndex:detailsIndex]];
+    
 }
 
 

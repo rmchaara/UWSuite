@@ -21,6 +21,7 @@ typedef void (^UWResponseBlock)(NSArray* response);
 -(MKNetworkOperation*) getFoodServicesInfo:(UWResponseBlock) foodJSONBlock onError:(MKNKErrorBlock) errorBlock;
 // get WatPark Information
 -(MKNetworkOperation*) getWatParkInfo:(UWResponseBlock) watparkJSONBlock onError:(MKNKErrorBlock) errorBlock;
+-(MKNetworkOperation*) getWatParkDetails:(UWResponseBlock) watparkJSONBlock onError:(MKNKErrorBlock) errorBlock;
 // get OMGUW info
 -(MKNetworkOperation*) getOmgInfo:(UWResponseBlock) omgJSONBlock onError:(MKNKErrorBlock) errorBlock;
 

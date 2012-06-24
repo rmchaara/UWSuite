@@ -15,5 +15,6 @@
 // Live Parking Info
 @property (strong, nonatomic) NSArray *watparkArray;
 @property (nonatomic, retain) NSTimer * timer; // Used to refresh WatPark Information
+@property (strong, nonatomic) NSArray *watparkDetailsArray;
 
 @end

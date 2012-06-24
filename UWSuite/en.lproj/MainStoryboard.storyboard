@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uhV-Vb-azp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uhV-Vb-azp">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -124,7 +124,7 @@
                     <navigationItem key="navigationItem" title="UW Suite" id="7ST-hy-kf4"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="75" y="636"/>
+            <point key="canvasLocation" x="65" y="636"/>
         </scene>
         <!--UWSOMGUWTVC - OMG UW-->
         <scene sceneID="bs0-Hz-j7E">
@@ -362,6 +362,7 @@
                                     <outlet property="cap" destination="zk6-L9-3GV" id="hP2-yu-FVp"/>
                                     <outlet property="count" destination="CY3-SE-iNE" id="OM6-wV-A7B"/>
                                     <outlet property="lot" destination="qDd-GV-aaV" id="LWc-sa-0Xi"/>
+                                    <segue destination="ex0-GX-83F" kind="push" id="Twe-e1-Dbs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -373,7 +374,123 @@
                     <navigationItem key="navigationItem" title="WatPark Info" id="4yK-iZ-Oj4"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="110" y="16"/>
+            <point key="canvasLocation" x="134" y="-702"/>
+        </scene>
+        <!--Parking Detail - WatPark Details-->
+        <scene sceneID="hc5-av-5hF">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R54-Vj-bKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ex0-GX-83F" customClass="ParkingDetail" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gpV-0W-jvE">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lot:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EdT-Bw-bT9">
+                                <rect key="frame" x="13" y="46" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="geb-H7-8ya">
+                                <rect key="frame" x="70" y="46" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rates" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="Iec-0o-x8X">
+                                <rect key="frame" x="13" y="115" width="56" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hourly:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aDH-qb-gz3">
+                                <rect key="frame" x="70" y="147" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gQf-FJ-YMt">
+                                <rect key="frame" x="91" y="242" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="After 4:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="5HN-tN-lWo">
+                                <rect key="frame" x="69" y="197" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Payment Types Accepted" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Xiw-gK-0NE">
+                                <rect key="frame" x="62" y="294" width="196" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="M7k-Gi-Th0">
+                                <rect key="frame" x="70" y="323" width="195" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hourly Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EHt-cf-FgH">
+                                <rect key="frame" x="158" y="147" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="After 4 Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ebY-64-jjM">
+                                <rect key="frame" x="158" y="197" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ZL2-dI-WlL">
+                                <rect key="frame" x="158" y="242" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EYv-h0-sRQ">
+                                <rect key="frame" x="72" y="366" width="177" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.40057146929999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show me">
+                                    <color key="titleColor" red="0.011764707043766975" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showOnMap:" destination="ex0-GX-83F" eventType="touchUpInside" id="VLy-da-AYe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27058824896812439" green="0.23921570181846619" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WatPark Details" id="ebL-Rf-fOV" userLabel="Navigation Item - WatPark Info"/>
+                    <connections>
+                        <outlet property="after4Rate" destination="ebY-64-jjM" id="kO7-Ab-w3G"/>
+                        <outlet property="hourlyRate" destination="EHt-cf-FgH" id="2DK-tS-S3j"/>
+                        <outlet property="lotName" destination="geb-H7-8ya" id="mCU-83-m1F"/>
+                        <outlet property="maxRate" destination="ZL2-dI-WlL" id="qhC-qL-CUh"/>
+                        <outlet property="paymentTypes" destination="M7k-Gi-Th0" id="N2n-UB-GEC"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="597" y="-697"/>
         </scene>
         <!--ExamTVC - Exam Schedule-->
         <scene sceneID="O7I-Mk-QDc">
@@ -548,10 +665,24 @@
         <image name="icon-0i.png" width="64" height="64"/>
     </resources>
     <classes>
+        <class className="CommonCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CommonCell.h"/>
+        </class>
+        <class className="ParkingDetail" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParkingDetail.h"/>
+            <relationships>
+                <relationship kind="action" name="showOnMap:"/>
+                <relationship kind="outlet" name="after4Rate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hourlyRate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lotName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="maxRate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="paymentTypes" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="TFNavigationBar" superclassName="UINavigationBar">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TFNavigationBar.h"/>
         </class>
-        <class className="UWSBuildingsInfoCell" superclassName="UITableViewCell">
+        <class className="UWSBuildingsInfoCell" superclassName="CommonCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSBuildingsInfoCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="acroLabel" candidateClass="UILabel"/>
@@ -561,7 +692,7 @@
         <class className="UWSBuildingsInfoTVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSBuildingsInfoTVC.h"/>
         </class>
-        <class className="UWSExamCell" superclassName="UITableViewCell">
+        <class className="UWSExamCell" superclassName="CommonCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSExamCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="course" candidateClass="UILabel"/>
@@ -578,7 +709,7 @@
         <class className="UWSFoodInfoTVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSFoodInfoTVC.h"/>
         </class>
-        <class className="UWSOMGUWCell" superclassName="UITableViewCell">
+        <class className="UWSOMGUWCell" superclassName="CommonCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSOMGUWCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="content" candidateClass="UILabel"/>
@@ -588,7 +719,7 @@
         <class className="UWSOMGUWTVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSOMGUWTVC.h"/>
         </class>
-        <class className="UWSParkingCell" superclassName="UITableViewCell">
+        <class className="UWSParkingCell" superclassName="CommonCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UWSParkingCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="cap" candidateClass="UILabel"/>

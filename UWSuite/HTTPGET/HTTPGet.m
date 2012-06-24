@@ -120,6 +120,33 @@
     
 }
 
+// Retrieve WatPark Details Information (not Live)
+-(MKNetworkOperation*) getWatParkDetails:(UWResponseBlock) watparkJSONBlock onError:(MKNKErrorBlock) errorBlock{
+    
+    // Initial HTTP GET function
+    MKNetworkOperation *op = [self operationWithPath:@"public/v1/?key=8629706fa948dd343dee920cd2a492bf&service=ParkingList&output=json" 
+                                              params:nil
+                                          httpMethod:@"GET"];    
+    
+    
+    // Asynchronous HTTP GET functionality
+    [op onCompletion:^(MKNetworkOperation *operation) {
+        
+        NSArray * valueDicResponse = [[[[op responseJSON] objectForKey:@"response"] objectForKey:@"data"] objectForKey:@"result"];
+        watparkJSONBlock(valueDicResponse);
+        
+    } onError:^(NSError *error) {
+        
+        DLog(@"%@", error);
+        errorBlock(error);
+    }];
+    
+    [self enqueueOperation:op];
+    
+    return op;
+    
+}
+
 // Retrieve OMGUW Information
 -(MKNetworkOperation*) getOmgInfo:(UWResponseBlock) omgJSONBlock onError:(MKNKErrorBlock) errorBlock{
     
