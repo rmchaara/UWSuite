@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		716031E9158946E40078C03E /* CommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 716031E8158946E40078C03E /* CommonCell.m */; };
+		71C7C47B1599604000CC887A /* ParkingDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C7C47A1599604000CC887A /* ParkingDetail.m */; };
 		EE012F94155865F800174A5A /* HTTPGet.m in Sources */ = {isa = PBXBuildFile; fileRef = EE012F93155865F800174A5A /* HTTPGet.m */; };
 		EE012FB2155978FE00174A5A /* Banner-01.png in Resources */ = {isa = PBXBuildFile; fileRef = EE012FA3155978FE00174A5A /* Banner-01.png */; };
 		EE012FB3155978FE00174A5A /* Banner-02.png in Resources */ = {isa = PBXBuildFile; fileRef = EE012FA4155978FE00174A5A /* Banner-02.png */; };
@@ -83,6 +84,8 @@
 /* Begin PBXFileReference section */
 		716031E7158946E40078C03E /* CommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonCell.h; path = Common/CommonCell.h; sourceTree = "<group>"; };
 		716031E8158946E40078C03E /* CommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonCell.m; path = Common/CommonCell.m; sourceTree = "<group>"; };
+		71C7C4791599604000CC887A /* ParkingDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParkingDetail.h; path = Parking/ParkingDetail.h; sourceTree = "<group>"; };
+		71C7C47A1599604000CC887A /* ParkingDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParkingDetail.m; path = Parking/ParkingDetail.m; sourceTree = "<group>"; };
 		EE012F92155865F800174A5A /* HTTPGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPGet.h; path = HTTPGET/HTTPGet.h; sourceTree = "<group>"; };
 		EE012F93155865F800174A5A /* HTTPGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPGet.m; path = HTTPGET/HTTPGet.m; sourceTree = "<group>"; };
 		EE012FA3155978FE00174A5A /* Banner-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Banner-01.png"; sourceTree = "<group>"; };
@@ -394,6 +397,8 @@
 		EE4FE7C5155206AD00B435DC /* Parking */ = {
 			isa = PBXGroup;
 			children = (
+				71C7C4791599604000CC887A /* ParkingDetail.h */,
+				71C7C47A1599604000CC887A /* ParkingDetail.m */,
 				EE4FE7C7155206D700B435DC /* UWSParkingTVC.h */,
 				EE4FE7C8155206D700B435DC /* UWSParkingTVC.m */,
 				EE4FE7CA155206F300B435DC /* UWSParkingCell.h */,
@@ -608,6 +613,7 @@
 				EE012F94155865F800174A5A /* HTTPGet.m in Sources */,
 				EE012FCA1559815400174A5A /* TFNavigationBar.m in Sources */,
 				716031E9158946E40078C03E /* CommonCell.m in Sources */,
+				71C7C47B1599604000CC887A /* ParkingDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
